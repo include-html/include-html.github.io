@@ -6,7 +6,7 @@
  -->
 
 <head>
-    <title>Using &lt;include-html></title>
+    <title>&lt;include-html></title>
     <script src="./element-include-html.js"></script>
     <script src="https://file-size.github.io/element.js"></script>
     <style>
@@ -14,10 +14,12 @@
             max-width: 1024px;
             font: 16px arial;
             margin: 0 auto;
+            --h2padding: 0.1em 0.5em; /* CSS properties cascade into shadowRoots */
         }
 
         h2 {
             background: gold;
+            padding: var(--h2padding);
         }
 
         include-html {

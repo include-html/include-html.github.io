@@ -1,3 +1,13 @@
+<style>
+    code.highlight {
+        font-size: 120%;
+        background: gold;
+    }
+
+    ul {
+        line-height: 1.5em;
+    }
+</style>
 <h2>Use</h2>
 <p part="paragraph">
     Press <b>Ctrl-U</b> (View page source) to view this index.html file with documentation.
@@ -6,10 +16,10 @@
 </p>
 <ul>
     <li><strong>src</strong> - reference to an external file ie:
-        <code>&lt;include-html src="use.html">&lt;/include-html></code>
+        <code class="highlight">&lt;include-html src="use.html">&lt;/include-html></code>
     </li>
     <li><strong>replaceWith</strong> - <b>replaces</b> your &lt;include-html> tag with the content loaded from
-        <code>src</code><br>This allows complex CSS selectors like <code>:nth-child</code> to work on your file
+        <code>src</code><br>This allows complex Global CSS selectors like <code>:nth-child</code> to work on your file
         <b>content</b> without there being a container element in between.
     </li>
 </ul>

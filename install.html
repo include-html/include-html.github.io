@@ -15,10 +15,14 @@
     li::marker {
         font-size: 1.5em;
     }
+
+    h2 {
+        padding: var(--h2padding);
+    }
 </style>
 <h2>Install</h2>
-<p  part="paragraph">
-    There is no NPM package, this element is about using less dependencies.
+<p part="paragraph">
+    No NPM package! This Web Component is about Less Code and Using less dependencies.
 </p>
 <ul>
     <li>
@@ -30,10 +34,10 @@
         Steal the code and work it into your own BaseClass
     </li>
     <li>
-        Include the raw JS code in a &lt;script> tag in your (main) HTML file.
+        Include the <i>minified</i> JS code in a &lt;script> tag in your (main) HTML file.
     </li>
     <li part="testonly">
-        <!-- part is styled by ::part(testonly) in the DOM container document -->
+        <!-- Standard HTML attribute "part" is styled by ::part(testonly) in the DOM container document -->
         For testing purposes load it from this GitHub repo:
         <br><code>&lt;script src="https://include-html.github.io/element-include-html.js">&lt;/script></code>
     </li>
