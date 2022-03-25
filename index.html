@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Using &lt;include-html></title>
+    <script src="./element-include-html.js"></script>
+    <script src="https://file-size.github.io/element.js"></script>
+    <style>
+        body {
+            max-width: 1024px;
+            font: 20px arial;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The &lt;include-html> Web Component</h1>
+
+    <include-html src="installation.html"></include-html>
+    <include-html src="usage.html"></include-html>
+    <include-html src="other.html"></include-html>
+
+    <h2>Filesize:</h2>
+    <!-- Use the <file-size> Web Component -->
+    <file-size src="https://include-html.github.io/element-include-html.js"></file-size>
+
+</body>
+
+</html>
