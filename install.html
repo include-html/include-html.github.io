@@ -1,17 +1,39 @@
-<h2>Install</h2>
+<style>
+    /* this HTML file is loaded with <include-html shadow src="install.html"> 
+        All DOM elements are created inside the shadowRoot, thus STYLES do NOT leak out of the shadowRoot
+        */
+    @counter-style emoji {
+        symbols: 🚧 ⚒️ 🔧 ⚠️;
+        suffix: "";
+    }
 
-There is no NPM package, this element is about using less dependencies. 
+    ul {
+        list-style-type: emoji;
+        list-style-position: outside;
+    }
+
+    li::marker {
+        font-size: 1.5em;
+    }
+</style>
+<h2>Install</h2>
+<p  part="paragraph">
+    There is no NPM package, this element is about using less dependencies.
+</p>
 <ul>
     <li>
-        Copy the <a href="https://include-html.github.io/element-include-html.js"><code>element-include-html.js</code></a> file to your project.
+        Copy the <a
+            href="https://include-html.github.io/element-include-html.js"><code>element-include-html.js</code></a> file
+        to your project.
     </li>
     <li>
-        Steal the code and work it into your own BaseClass 
+        Steal the code and work it into your own BaseClass
     </li>
     <li>
         Include the raw JS code in a &lt;script> tag in your (main) HTML file.
     </li>
-    <li>
+    <li part="testonly">
+        <!-- part is styled by ::part(testonly) in the DOM container document -->
         For testing purposes load it from this GitHub repo:
         <br><code>&lt;script src="https://include-html.github.io/element-include-html.js">&lt;/script></code>
     </li>

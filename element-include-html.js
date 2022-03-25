@@ -6,8 +6,8 @@ customElements.define(
       // call with parameter to *replace* SVG (of <load-file> persists)
       src = this.getAttribute("src"),
 
-      // attach a shadowRoot if none exists (prevents displaying error when moving Nodes)
-      root = this.getAttribute("shadow")
+      // attach a shadowRoot if required and none exists (prevents displaying error when moving Nodes)
+      root = this.hasAttribute("shadow")
         ? this.shadowRoot || this.attachShadow({ mode: "open" })
         : this
     ) {
